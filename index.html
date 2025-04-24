@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Photography Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Food Photography Prompt Generator</h1>
+        <p>Create stunning food photography ideas with AI-inspired prompts</p>
+    </header>
+
+    <div class="generator-form">
+        <!-- Perspective Dropdown -->
+        <div class="form-group">
+            <label for="perspective">Perspective</label>
+            <select id="perspective">
+                <option value="top view">Top View</option>
+                <option value="45-degree angle">45° Angle</option>
+                <option value="side view">Side View</option>
+                <option value="close-up">Close-up</option>
+                <option value="macro">Macro</option>
+            </select>
+        </div>
+        
+        <!-- Art Style Dropdown -->
+        <div class="form-group">
+            <label for="art-style">Art Style</label>
+            <select id="art-style">
+                <option value="hyper-realistic">Hyper-realistic</option>
+                <option value="minimalist">Minimalist</option>
+                <option value="rustic">Rustic</option>
+                <option value="editorial">Editorial</option>
+                <option value="vintage">Vintage</option>
+            </select>
+        </div>
+        
+        <!-- Object 1 with Condition -->
+        <div class="form-group">
+            <label for="object1">Main Object</label>
+            <div class="select-group">
+                <select id="object1">
+                    <option value="udang">Shrimp</option>
+                    <option value="ikan mas">Goldfish</option>
+                    <option value="ayam">Chicken</option>
+                    <option value="sapi">Beef</option>
+                    <option value="bawang">Onion</option>
+                    <option value="cabai">Chili</option>
+                    <option value="sawi">Mustard Greens</option>
+                    <option value="kol">Cabbage</option>
+                    <option value="kangkung">Water Spinach</option>
+                    <option value="kedelai">Soybean</option>
+                    <option value="nasi">Rice</option>
+                    <option value="kacang panjang">Long Beans</option>
+                    <option value="singkong">Cassava</option>
+                    <option value="keju">Cheese</option>
+                    <option value="susu">Milk</option>
+                    <option value="sosis">Sausage</option>
+                </select>
+                <select id="object1-condition">
+                    <option value="fresh">Fresh</option>
+                    <option value="melted">Melted</option>
+                    <option value="spilled">Spilled</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Object 2 -->
+        <div class="form-group">
+            <label for="object2">With (Optional)</label>
+            <div class="select-group">
+                <select id="object2">
+                    <option value="">None</option>
+                    <option value="udang">Shrimp</option>
+                    <option value="ikan mas">Goldfish</option>
+                    <option value="ayam">Chicken</option>
+                    <option value="sapi">Beef</option>
+                    <option value="bawang">Onion</option>
+                    <option value="cabai">Chili</option>
+                    <option value="sawi">Mustard Greens</option>
+                    <option value="kol">Cabbage</option>
+                    <option value="kangkung">Water Spinach</option>
+                    <option value="kedelai">Soybean</option>
+                    <option value="nasi">Rice</option>
+                    <option value="kacang panjang">Long Beans</option>
+                    <option value="singkong">Cassava</option>
+                    <option value="keju">Cheese</option>
+                    <option value="susu">Milk</option>
+                    <option value="sosis">Sausage</option>
+                </select>
+                <select id="object2-condition">
+                    <option value="fresh">Fresh</option>
+                    <option value="melted">Melted</option>
+                    <option value="spilled">Spilled</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Object 4 -->
+        <div class="form-group">
+            <label for="object4">And (Optional)</label>
+            <div class="select-group">
+                <select id="object4">
+                    <option value="">None</option>
+                    <option value="udang">Shrimp</option>
+                    <option value="ikan mas">Goldfish</option>
+                    <option value="ayam">Chicken</option>
+                    <option value="sapi">Beef</option>
+                    <option value="bawang">Onion</option>
+                    <option value="cabai">Chili</option>
+                    <option value="sawi">Mustard Greens</option>
+                    <option value="kol">Cabbage</option>
+                    <option value="kangkung">Water Spinach</option>
+                    <option value="kedelai">Soybean</option>
+                    <option value="nasi">Rice</option>
+                    <option value="kacang panjang">Long Beans</option>
+                    <option value="singkong">Cassava</option>
+                    <option value="keju">Cheese</option>
+                    <option value="susu">Milk</option>
+                    <option value="sosis">Sausage</option>
+                </select>
+                <select id="object4-condition">
+                    <option value="fresh">Fresh</option>
+                    <option value="melted">Melted</option>
+                    <option value="spilled">Spilled</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Object 5 -->
+        <div class="form-group">
+            <label for="object5">And (Optional)</label>
+            <div class="select-group">
+                <select id="object5">
+                    <option value="">None</option>
+                    <option value="udang">Shrimp</option>
+                    <option value="ikan mas">Goldfish</option>
+                    <option value="ayam">Chicken</option>
+                    <option value="sapi">Beef</option>
+                    <option value="bawang">Onion</option>
+                    <option value="cabai">Chili</option>
+                    <option value="sawi">Mustard Greens</option>
+                    <option value="kol">Cabbage</option>
+                    <option value="kangkung">Water Spinach</option>
+                    <option value="kedelai">Soybean</option>
+                    <option value="nasi">Rice</option>
+                    <option value="kacang panjang">Long Beans</option>
+                    <option value="singkong">Cassava</option>
+                    <option value="keju">Cheese</option>
+                    <option value="susu">Milk</option>
+                    <option value="sosis">Sausage</option>
+                </select>
+                <select id="object5-condition">
+                    <option value="fresh">Fresh</option>
+                    <option value="melted">Melted</option>
+                    <option value="spilled">Spilled</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Lighting -->
+        <div class="form-group">
+            <label for="lighting">Lighting</label>
+            <select id="lighting">
+                <option value="soft lighting">Soft Lighting</option>
+                <option value="dramatic lighting">Dramatic Lighting</option>
+                <option value="natural light">Natural Light</option>
+                <option value="backlit">Backlit</option>
+                <option value="blurred lighting">Blurred Lighting</option>
+            </select>
+        </div>
+        
+        <!-- Background -->
+        <div class="form-group">
+            <label for="background">Background</label>
+            <select id="background">
+                <option value="kitchen background">Kitchen</option>
+                <option value="wooden table">Wooden Table</option>
+                <option value="marble surface">Marble Surface</option>
+                <option value="dark backdrop">Dark Backdrop</option>
+                <option value="outdoor setting">Outdoor</option>
+            </select>
+        </div>
+        
+        <button id="generate-btn">Generate Prompt</button>
+    </div>
+
+    <div class="result-container" id="result-container" style="display: none;">
+        <div class="prompt-display" id="prompt-display">
+            <!-- Generated prompt will appear here -->
+        </div>
+        <div class="action-buttons">
+            <button id="copy-btn">Copy Prompt</button>
+            <button id="share-wa-btn">Share to WhatsApp</button>
+            <button id="new-prompt-btn">Generate New</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
